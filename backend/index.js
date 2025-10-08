@@ -39,7 +39,7 @@ app.get("/fogado", (req, res) => {
 });
 
 app.get("/kihasznaltsag", (req, res) => {  
-    const sql = "SELECT szobak.sznev AS szobanev, COUNT(vendeg) AS vendegek, SUM(DATEDIFF(tav, erk)) AS vendegejszakak FROM foglalasok INNER JOIN szobak ON foglalasok.szoba = szobak.szazon GROUP BY szoba ORDER BY vendegejszakak ASC, vendegek ASC;"; 
+    const sql = "SELECT szobak.sznev AS szobanev, COUNT(vendeg) AS vendegek, SUM(DATEDIFF(tav, erk)) AS vendegejszakak FROM foglalasok INNER JOIN szobak ON foglalasok.szoba = szobak.szazon GROUP BY szoba ORDER BY vendegek ASC;"; 
     db.query(sql, (err, result) => { 
     if (err) return res.json(err); 
     return res.json(result) 
