@@ -1,0 +1,34 @@
+{
+	"info": {
+		"_postman_id": "f2d6dc5f-fe69-402b-8b4b-2f3b639f1553",
+		"name": "fogado",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "41645711"
+	},
+	"item": [
+		{
+			"name": "Fogado",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Kihasznaltsag",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Foglaltsag",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
