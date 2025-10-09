@@ -47,7 +47,7 @@ app.get("/kihasznaltsag", (req, res) => {
 });
 
 app.get("/foglaltsag", (req, res) => { 
-    const sql = "SELECT vendegek.vnev AS 'Vendegnev',sznev AS 'Szobanev',foglalasok.erk AS 'Erkezes',foglalasok.tav AS 'Tavozas' FROM `szobak` INNER JOIN foglalasok ON szobak.szazon = foglalasok.szoba INNER JOIN vendegek ON foglalasok.vendeg = vendegek.vsorsz ORDER BY Vendegnev ASC;";
+    const sql = "SELECT sz.sznev AS 'Szobanév', f.erk AS 'Érkezés', f.tav AS 'Távozás' FROM szobak sz LEFT JOIN (SELECT szoba, erk, tav FROM foglalasok WHERE (szoba, erk) IN (SELECT szoba, MAX(erk) FROM foglalasok GROUP BY szoba)) f ON sz.szazon = f.szoba ORDER BY sz.sznev;";
     db.query(sql, (err, result) => {
     if (err) return res.json(err); 
     return res.json(result) 
