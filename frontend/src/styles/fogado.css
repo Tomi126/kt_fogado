@@ -1,5 +1,6 @@
 body{
   color: #293647;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .bg-fej {
@@ -22,13 +23,6 @@ body{
   font-weight: bold;
 }
 
-.container{
-  margin-bottom: 25px;
-}
-
-.bg-torzs {
-  align-content: center;
-}
 
 h3{
   margin: 25px 0px;
@@ -53,9 +47,98 @@ a {
 }
 
 
-.Tables {
+#fogado-table {
   margin: auto;
   margin-top: 15px;
   border-collapse: collapse;
+  width: 90%;
+}
+
+
+
+#custom-cell {
+  background-color: rgb(188, 171, 120);
+  border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+
+#tablebox{
+  width: 100%;
+  display: flex;
+  gap: 130px;
+  justify-content: center;
+  align-items: end;
+}
+
+#kihasz-table {
+  margin: auto;
+  margin-top: 15px;
+  border-collapse: collapse;
+}
+
+
+#foglaltsag-table {
+  margin: auto;
+  margin-top: 15px;
+  border-collapse: collapse;
+
+}
+
+#topimg {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+.contentbox {
+  width: 30%;
+  display: inline-block;
+  margin: 1%;
+  height: auto;
+}
+
+
+#contbx1 {
+background-color: rgb(188, 171, 120);
+vertical-align: top;
+}
+
+#contbx2 {
+ 
+  vertical-align: top;
+}
+
+#contbx3 {
+  background-color: rgb(188, 171, 120);
+  vertical-align: top;
+}
+
+p{
+  padding: 15px;
+}
+
+
+
+#ketagyimg {
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  object-fit: cover;
+}
+
+#hollokoimg {
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  object-fit: cover;
+}
+
+#box2adjust {
+  height: 65px;
+}
+
+#box3adjust {
+  height: 375px;
 }
 
