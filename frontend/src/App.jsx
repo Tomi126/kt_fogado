@@ -88,33 +88,22 @@ function App() {
         </div>
       </div>
 
+      
+
+      <select class="form-select" aria-label="Default select example" id='szobaselect'>
+        <option value="1">Szende</option>
+        <option value="2">Szundi</option>
+        <option value="3">Morgó</option>
+        <option value="4">Hapci</option>
+        <option value="5">Tudor</option>
+        <option value="6">Vidor</option>
+        <option value="7">Kuka</option>
+      </select>
+      <button type="button" class="btn btn-outline-dark" id="adatbtn">Adatok</button>
+
+
 
     <div id="tablebox">
-      <div>
-        <h3>A szobák kihasználtsága</h3>
-        <table class=" table table-striped" id="kihasz-table">
-          <thead>
-            <tr>
-              <th>Szoba</th>
-              <th>Vendégek száma</th>
-              <th>Vendégéjszakák</th>
-            </tr>
-          </thead>
-          <tbody>
-            {occupancy.map((o, i) => (
-              <tr key={i}>
-                <td>{o.szobanev}</td>
-                <td>{o.vendegek}</td>
-                <td>{o.vendegejszakak}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
-
-      <div>
-        <div>
-          <div>
             <div>
               <h3>A vendégszobák foglaltsága</h3>
               <table class="table table-striped" id="foglaltsag-table">
@@ -136,8 +125,29 @@ function App() {
                 </tbody>
               </table>
             </div>
-          </div>
-        </div>
+
+
+            
+        <div>
+        <h3>A szobák kihasználtsága</h3>
+        <table class=" table table-striped" id="kihasz-table">
+          <thead>
+            <tr>
+              <th>Szoba</th>
+              <th>Vendégek száma</th>
+              <th>Vendégéjszakák</th>
+            </tr>
+          </thead>
+          <tbody>
+            {occupancy.map((o, i) => (
+              <tr key={i}>
+                <td>{o.szobanev}</td>
+                <td>{o.vendegek}</td>
+                <td>{o.vendegejszakak}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
       </div>
     </div>
     </>
