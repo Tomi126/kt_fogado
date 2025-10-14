@@ -74,6 +74,7 @@ a {
   margin: auto;
   margin-top: 15px;
   border-collapse: collapse;
+  vertical-align: top;
 }
 
 

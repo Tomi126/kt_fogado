@@ -89,6 +89,7 @@ function App() {
       </div>
 
       
+{/* 
 
       <select class="form-select" aria-label="Default select example" id='szobaselect'>
         <option value="1">Szende</option>
@@ -101,7 +102,7 @@ function App() {
       </select>
       <button type="button" class="btn btn-outline-dark" id="adatbtn">Adatok</button>
 
-
+*/}
 
     <div id="tablebox">
             <div>
